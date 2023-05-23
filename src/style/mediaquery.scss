@@ -1,0 +1,106 @@
+@media (max-width:955px) {
+
+    /*------home------*/
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100vw;
+        height: 100vh;
+
+        >.sideBar {
+            padding: 5px;
+            background-color: #202123;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+
+    /*------home------*/
+
+    /*------imageGenerator------*/
+    .dividedContainer {
+        grid-template-columns: 1fr;
+
+        >.sideBar {
+            display: none
+        }
+    }
+
+    /*------imageGenerator------*/
+}
+
+@media (max-width:625px) {
+
+    /*------home------*/
+    .singleContainer {
+        >.main1 {
+            >.main {
+                >.box {
+                    width: 90%;
+
+                    >header {
+                        font: 200 18px sans-serif;
+                    }
+
+                    >.section_box {
+                        grid-template-columns: 1fr;
+                        gap: 2px;
+
+                        >section {
+                            gap: 10px;
+                            padding: 5px;
+
+                            >header {
+                                font: 400 16px sans-serif
+                            }
+
+                            >div {
+                                font: 200 12px sans-serif
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*------home------*/
+    >.images {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width:570px) {
+
+    /*------imageGenerator------*/
+    .dividedContainer {
+        >.imgContainer {
+            >.AiImageGenerator {
+                >.images {
+                    >img {
+                        width: 150px
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*------imageGenerator------*/
+@media (max-width:450px) {
+    .container {
+        >.main1 {
+            .bottom {
+                >form {
+                    >.inputSearch {
+                        width: 50px
+                    }
+                }
+            }
+        }
+    }
+}
